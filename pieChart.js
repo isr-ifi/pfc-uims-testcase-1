@@ -1,7 +1,6 @@
 // class taken from https://apexcharts.com/react-chart-demos/pie-charts/simple-pie-chart/
 // last visited: 9.11.19
 
-
 /**
  * Pie chart
  *
