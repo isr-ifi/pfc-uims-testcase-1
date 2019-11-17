@@ -1,4 +1,6 @@
 import React from "react";
+import ReactApexChart from "react";
+import ReactDOM from "react";
 
 // class taken from https://apexcharts.com/react-chart-demos/pie-charts/simple-pie-chart/
 // last visited: 9.11.19
@@ -44,5 +46,8 @@ class PieChart extends React.Component {
   }
 }
 
-const domContainer = document.querySelector('#app');
-ReactDOM.render(React.createElement(PieChart), domContainer);
+
+export default PieChart;
+
+// const domContainer = document.querySelector('#app');
+//ReactDOM.render(React.createElement(PieChart), domContainer);
