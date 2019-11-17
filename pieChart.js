@@ -1,3 +1,5 @@
+import React from "react";
+
 // class taken from https://apexcharts.com/react-chart-demos/pie-charts/simple-pie-chart/
 // last visited: 9.11.19
 

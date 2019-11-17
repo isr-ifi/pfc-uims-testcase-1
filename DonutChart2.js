@@ -1,3 +1,5 @@
+import React from "react";
+
 // code taken from: https://apexcharts.com/react-chart-demos/pie-charts/donut-with-pattern/
 // last visited: 9.11.19
 
