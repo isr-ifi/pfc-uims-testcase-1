@@ -1,6 +1,6 @@
 import React from "react";
-import ReactApexChart from "react";
-import ReactDOM from "react";
+import ReactApexChart from "react-apexcharts";
+import ReactDOM from "react-dom";
 
 // class taken from https://apexcharts.com/react-chart-demos/pie-charts/simple-pie-chart/
 // last visited: 9.11.19
