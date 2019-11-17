@@ -1,4 +1,6 @@
 import React from "react";
+import ReactApexChart from "react-apexcharts";
+import ReactDOM from "react-dom";
 
 // code taken from: https://apexcharts.com/react-chart-demos/pie-charts/donut-with-pattern/
 // last visited: 9.11.19
@@ -86,5 +88,7 @@ class DonutChart2 extends React.Component {
     }
 }
 
-const domContainer = document.querySelector('#app');
-ReactDOM.render(React.createElement(DonutChart), domContainer);
+export default DonutChart2;
+
+// const domContainer = document.querySelector('#app');
+// ReactDOM.render(React.createElement(DonutChart), domContainer);
