@@ -1,4 +1,6 @@
 import React from "react";
+import ReactApexChart from "react-apexcharts";
+import ReactDOM from "react-dom";
 
 // code taken from: https://apexcharts.com/react-chart-demos/pie-charts/gradient-donut/
 // last visited: 9.11.19
