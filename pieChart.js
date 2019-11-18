@@ -12,6 +12,7 @@ import ReactDOM from "react-dom";
  * @props {integer} breakpoint
  * @props {integer} width
  * @props {string}  position	aum.mfa.co2
+ * @props {dynamic} labels
  */
 class PieChart extends React.Component {
       
