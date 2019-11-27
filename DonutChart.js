@@ -9,7 +9,8 @@ import ReactDOM from "react-dom";
  * Not valid syntax to be recognized as visual component
  *
  * @param something
- * @props anotherthing
+ * @props {boolean} enabled
+ * @props {string} type
  */
 class DonutChart extends React.Component {
 
