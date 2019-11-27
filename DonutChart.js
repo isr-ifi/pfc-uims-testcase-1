@@ -19,10 +19,10 @@ class DonutChart extends React.Component {
         this.state = {
             options: {
                 dataLabels: {
-                    enabled: false
+                    enabled: this.props.enabled//false
                 },
                 fill: {
-                    type: 'gradient',
+                    type: this.props.type, //'gradient',
                 },
                 legend: {
                     formatter: function(val, opts) {
@@ -60,5 +60,7 @@ class DonutChart extends React.Component {
     }
 }
 
-const domContainer = document.querySelector('#app');
-ReactDOM.render(React.createElement(DonutChart), domContainer);
+export default DonutChart;
+
+// const domContainer = document.querySelector('#app');
+// ReactDOM.render(React.createElement(DonutChart), domContainer);
