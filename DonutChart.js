@@ -8,7 +8,7 @@ import ReactDOM from "react-dom";
 /**
  * Not valid syntax to be recognized as visual component
  *
- # @visComp
+ * @visComp
  * @param something
  * @props {boolean} enabled
  * @props {string} type
