@@ -67,3 +67,5 @@ export default DonutChart;
 // const domContainer = document.querySelector('#app');
 // ReactDOM.render(React.createElement(DonutChart), domContainer);
 
+
+
