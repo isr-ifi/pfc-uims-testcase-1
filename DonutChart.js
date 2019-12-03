@@ -10,8 +10,8 @@ import ReactDOM from "react-dom";
  *
  * @visComp
  * @param something
- * @props {boolean} enabled
- * @props {string} type
+ * @props {boolean} enabled [true]
+ * @props {string} type [gradient]
  */
 class DonutChart extends React.Component {
 
@@ -53,7 +53,7 @@ class DonutChart extends React.Component {
 
 
             <div id="chart">
-            <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+            <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="100%" />
           </div>
 
 

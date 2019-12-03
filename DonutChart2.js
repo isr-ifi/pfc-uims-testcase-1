@@ -79,7 +79,7 @@ class DonutChart2 extends React.Component {
 
 
             <div id="chart">
-            <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+            <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="100%" />
           </div>
 
 
