@@ -10,8 +10,8 @@ import ReactDOM from "react-dom";
  *
  * @visComp
  * @props {integer} breakpoint [480]
- * @props {integer} width [200]
- * @props {string} position [bottom]
+ * @props {integer} optionChartWidth [200]
+ * @props {string} legendPosition [bottom]
  * @props {dynamic} labels [aum.mfa.co2]
  */
 class PieChart extends React.Component {
@@ -41,7 +41,7 @@ class PieChart extends React.Component {
   render() {
     return (
       <div id="chart">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="380" />
+        <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="100%" />
       </div>
     );
   }
