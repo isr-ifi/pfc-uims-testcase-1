@@ -25,7 +25,7 @@ import ReactDOM from "react-dom";
  * @props {dynamic} valueD [aum.mfa.out.Infrastructure => value => energy => TJ]
  * @props {dynamic} valueE [aum.mfa.out.Industry => value => energy => TJ]
  *
- * @props {input} click [test] (aum.mfa.in.PublicVehicles => value => VehiclesPerCapita => PrivateVehicles/capita)
+ * @props {input} click [1000] (aum.mfa.in.PublicVehicles => value => VehiclesPerCapita => PrivateVehicles/capita)
  */
 class PieChart extends React.Component {
       
@@ -54,8 +54,8 @@ class PieChart extends React.Component {
   render() {
     return (
       <div id="chart">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="auto" {/*width="380"*/} /> 
-        <button onClick={() => alert(this.props.click)}>test<button>
+        <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="100%" /> 
+        <button onClick={() => alert(this.props.click)}>test</button>
       </div>
     );
   }
