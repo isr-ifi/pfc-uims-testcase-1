@@ -1,0 +1,14 @@
+{
+	"name": "Infrastructure",
+	"value": {
+		"stock": {
+			"TonsOfMaterials":324
+		},
+		"outflow": {
+			"TonsOfMaterials":600
+		},
+		"inflow": {
+			"TonsOfMaterials":900
+		}
+	}
+}

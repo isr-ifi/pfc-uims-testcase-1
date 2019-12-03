@@ -1,0 +1,23 @@
+{
+	"name": "Private Vehicles",
+	"value": {
+		"stock": {
+			"NumberOfVehicles":2000,
+			"TonsOfMaterials":3000
+		},
+		"outflow": {
+			"NumberOfVehicles":400,
+			"TonsOfMaterials":200
+		},
+		"inflow": {
+			"NumberOfVehicles":1000,
+			"TonsOfMaterials":2000
+		},
+		"enery": {
+			"TJ":4000
+		},
+		"emissions": {
+			"CO2-Eq":4000000
+		}
+	}
+}

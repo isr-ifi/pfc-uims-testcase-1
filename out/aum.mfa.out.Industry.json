@@ -1,0 +1,26 @@
+{
+	"name": "Industry",
+	"value": {
+		"Flow from Components Markets to Indsutry": {
+			"TonsOfMaterials":6256
+		},
+		"Flow from Scrap Market to Industry": {
+			"TonsOfMaterials":56564
+		},
+		"Flow of Import of scrap material (secondary material) (recycled material)": {
+			"TonsOfMaterials":65465
+		},
+		"Flow of Imported components Materials": {
+			"TonsOfMaterials":34566
+		},
+		"Import of primary material": {
+			"TonsOfMaterials":45345
+		},
+		"enery": {
+			"TJ":3300
+		},
+		"emissions": {
+			"CO2-Eq":300000
+		}
+	}
+}

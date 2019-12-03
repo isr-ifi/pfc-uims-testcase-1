@@ -1,0 +1,14 @@
+{
+	"name": "End of Life Mgmt.",
+	"value": {
+		"Flow from EOL mgmt. to Landfill and Incineration": {
+			"TonsOfMaterials":777
+		},
+		"Flow from EOL to Scrap Market (Recycle)": {
+			"TonsOfMaterials":888
+		},
+		"Flow from EOL to Components Market (Reuse)": {
+			"TonsOfMaterials":999
+		}
+	}
+}

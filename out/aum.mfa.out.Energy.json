@@ -1,0 +1,17 @@
+{
+	"name": "Energy",
+	"value": {
+		"Flow of Energy towards Domestic Energy Production (nuclear power, hydropower, district heating and renewable)": {
+			"TJ":34
+		},
+		"Flow of Import of Energy (oil, gas, coal, electricity and wood)": {
+			"TJ":153
+		},
+		"Flow of Energy from the CH forests (wood)": {
+			"TJ":787
+		},
+		"Flow of Energy from fomestic production to electricity, district heating and renewable market": {
+			"TJ":8786
+		}
+	}
+}

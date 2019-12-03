@@ -1,0 +1,23 @@
+{
+	"name": "Public Vehicles",
+	"value": {
+		"stock": {
+			"NumberOfVehicles":2200,
+			"TonsOfMaterials":2900
+		},
+		"outflow": {
+			"NumberOfVehicles":660,
+			"TonsOfMaterials":797
+		},
+		"inflow": {
+			"NumberOfVehicles":1203,
+			"TonsOfMaterials":2023
+		},
+		"enery": {
+			"TJ":2000
+		},
+		"emissions": {
+			"CO2-Eq":800000
+		}
+	}
+}

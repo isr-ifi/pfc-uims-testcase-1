@@ -1,0 +1,20 @@
+{
+	"name": "Other Buildings",
+	"value": {
+		"stock": {
+			"TonsOfMaterials":300
+		},
+		"outflow": {
+			"TonsOfMaterials":6600
+		},
+		"inflow": {
+			"TonsOfMaterials":9900
+		},
+		"enery": {
+			"TJ":300
+		},
+		"emissions": {
+			"CO2-Eq":1000000
+		}
+	}
+}

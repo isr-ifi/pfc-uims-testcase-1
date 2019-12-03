@@ -1,0 +1,26 @@
+{
+	"name": "Residential Buildings",
+	"value": {
+		"stock": {
+			"m2":34,
+			"NumberOfVehicles":5000,
+			"TonsOfMaterials":4000
+		},
+		"outflow": {
+			"m2":77,
+			"NumberfVehicles":100,
+			"TonsOfMaterials":110
+		},
+		"inflow": {
+			"m2":11,
+			"NumberOfVehicles":800,
+			"TonsOfMaterials":9000
+		},
+		"enery": {
+			"TJ":9000
+		},
+		"emissions": {
+			"CO2-Eq":7700000
+		}
+	}
+}

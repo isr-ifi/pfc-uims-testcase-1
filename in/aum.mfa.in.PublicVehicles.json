@@ -1,0 +1,28 @@
+{
+	"name": "Private Vehicles",
+	"value": {
+		"Vehicles per Capita": {
+			"Private Vehicles/capita":777
+		},
+		"Average Lifetime": {
+			"years":50
+		},
+		"Type Split (Types=gasoline, diesel, electric vehicles (EV))": {
+			"%":88
+		},
+		"Kilometrage": {
+			"Km driven / private vehicle":1000
+		},
+		"Fuel Efficiency (for each type)": {
+			"L/100km":66
+		}
+		,
+		"Material per Vehicle": {
+			"Kg Material / private vehicle":98
+		}
+		,
+		"Carbon Intensity (for gasoline, diesel and electricity)": {
+			"Tones CO2 / L":88
+		}
+	}
+}
