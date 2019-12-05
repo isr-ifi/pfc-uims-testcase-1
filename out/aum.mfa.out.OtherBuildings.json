@@ -1,20 +1,30 @@
 {
 	"name": "Other Buildings",
 	"value": {
-		"stock": {
-			"TonsOfMaterials":300
+		"1": {
+			"name":"stock",
+			"unit":"Tons of Materials",
+			"value": 300
 		},
-		"outflow": {
-			"TonsOfMaterials":6600
+		"2": {
+			"name":"outflow",
+			"unit":"Tons of Materials",
+			"value": 6600
 		},
-		"inflow": {
-			"TonsOfMaterials":9900
+		"3": {
+			"name":"inflow",
+			"unit":"Tons of Materials",
+			"value": 9900
 		},
-		"enery": {
-			"TJ":300
+		"4": {
+			"name":"enery",
+			"unit":"TJ",
+			"value": 300
 		},
-		"emissions": {
-			"CO2-Eq":1000000
+		"5": {
+			"name":"emissions",
+			"unit":"CO2-Eq",
+			"value": 1000000
 		}
 	}
 }

@@ -1,28 +1,40 @@
 {
 	"name": "Private Vehicles",
 	"value": {
-		"Vehicles per Capita": {
-			"Private Vehicles/capita":777
+		"1": {
+			"name":"Vehicles per Capita",
+			"unit":"Private vehicles/capita",
+			"value": 777
 		},
-		"Average Lifetime": {
-			"years":50
+		"2": {
+			"name":"Average Lifetime",
+			"unit":"years",
+			"value": 50
 		},
-		"Type Split (Types=gasoline, diesel, electric vehicles (EV))": {
-			"%":88
+		"3": {
+			"name":"Type Split (Types=gasoline, diesel, electric vehicles (EV))",
+			"unit":"%",
+			"value": 88
 		},
-		"Kilometrage": {
-			"Km driven / private vehicle":1000
+		"4": {
+			"name":"Kilometrage",
+			"unit":"Km driven / private vehicle",
+			"value": 1000
 		},
-		"Fuel Efficiency (for each type)": {
-			"L/100km":66
-		}
-		,
-		"Material per Vehicle": {
-			"Kg Material / private vehicle":98
-		}
-		,
-		"Carbon Intensity (for gasoline, diesel and electricity)": {
-			"Tones CO2 / L":88
+		"5": {
+			"name":"Fuel Efficiency (for each type)",
+			"unit":"L/100km",
+			"value": 66
+		},
+		"6": {
+			"name":"Material per Vehicle",
+			"unit":"Kg Material / private vehicle",
+			"value": 98
+		},
+		"7": {
+			"name":"Carbon Intensity (for gasoline, diesel and electricity)",
+			"unit":"Tones CO2 / L",
+			"value": 88
 		}
 	}
 }

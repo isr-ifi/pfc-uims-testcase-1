@@ -1,23 +1,30 @@
 {
 	"name": "Public Vehicles",
 	"value": {
-		"stock": {
-			"NumberOfVehicles":2200,
-			"TonsOfMaterials":2900
+		"1": {
+			"name":"stock",
+			"unit":["Number of Vehicles", "Tons of Materials"],
+			"value": [2200, 2900]
 		},
-		"outflow": {
-			"NumberOfVehicles":660,
-			"TonsOfMaterials":797
+		"2": {
+			"name":"outflow",
+			"unit":["Number of Vehicles", "Tons of Materials"],
+			"value": [660, 797]
 		},
-		"inflow": {
-			"NumberOfVehicles":1203,
-			"TonsOfMaterials":2023
+		"3": {
+			"name":"inflow",
+			"unit":["Number of Vehicles", "Tons of Materials"],
+			"value": [1203, 2023]
 		},
-		"enery": {
-			"TJ":2000
+		"4": {
+			"name":"enery",
+			"unit":"TJ",
+			"value": 2000
 		},
-		"emissions": {
-			"CO2-Eq":800000
+		"5": {
+			"name":"emissions",
+			"unit":"CO2-Eq",
+			"value": 800000
 		}
 	}
 }

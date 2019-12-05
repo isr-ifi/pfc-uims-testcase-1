@@ -1,14 +1,20 @@
 {
 	"name": "End of Life Mgmt.",
 	"value": {
-		"Flow from EOL mgmt. to Landfill and Incineration": {
-			"TonsOfMaterials":777
+		"1": {
+			"name":"Flow from EOL mgmt. to Landfill and Incineration",
+			"unit":"Tons of Materials",
+			"value": 777
 		},
-		"Flow from EOL to Scrap Market (Recycle)": {
-			"TonsOfMaterials":888
+		"2": {
+			"name":"Flow from EOL to Scrap Market (Recycle)",
+			"unit":"Tons of Materials",
+			"value": 888
 		},
-		"Flow from EOL to Components Market (Reuse)": {
-			"TonsOfMaterials":999
+		"3": {
+			"name":"Flow from EOL to Components Market (Reuse)",
+			"unit":"Tons of Materials",
+			"value": 999
 		}
 	}
 }

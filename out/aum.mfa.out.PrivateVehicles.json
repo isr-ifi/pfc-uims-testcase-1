@@ -1,23 +1,30 @@
 {
 	"name": "Private Vehicles",
 	"value": {
-		"stock": {
-			"NumberOfVehicles":2000,
-			"TonsOfMaterials":3000
+		"1": {
+			"name":"stock",
+			"unit":["Number of Vehicles", "Tons of Materials"],
+			"value": [2000, 3000]
 		},
-		"outflow": {
-			"NumberOfVehicles":400,
-			"TonsOfMaterials":200
+		"2": {
+			"name":"outflow",
+			"unit":["Number of Vehicles", "Tons of Materials"],
+			"value": [400, 200]
 		},
-		"inflow": {
-			"NumberOfVehicles":1000,
-			"TonsOfMaterials":2000
+		"3": {
+			"name":"inflow",
+			"unit":["Number of Vehicles", "Tons of Materials"],
+			"value": [1000, 2000]
 		},
-		"enery": {
-			"TJ":4000
+		"4": {
+			"name":"enery",
+			"unit":"TJ",
+			"value": 4000
 		},
-		"emissions": {
-			"CO2-Eq":4000000
+		"5": {
+			"name":"emissions",
+			"unit":"CO2-Eq",
+			"value": 4000000
 		}
 	}
 }
