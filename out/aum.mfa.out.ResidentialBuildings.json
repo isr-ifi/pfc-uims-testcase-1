@@ -3,28 +3,58 @@
 	"value": {
 		"1": {
 			"name":"stock",
-			"unit":["m2", "Number of Vehicles", "Tons of Materials"],
-			"value": [34, 5000, 4000]
+			"unit": "Tons of Materials",
+			"value": 300
 		},
 		"2": {
-			"name":"outflow",
-			"unit":["m2", "Number of Vehicles", "Tons of Materials"],
-			"value": [77, 100, 110]
+			"name":"stock",
+			"unit": "m2",
+			"value": 34
 		},
 		"3": {
-			"name":"inflow",
-			"unit":["m2", "Number of Vehicles", "Tons of Materials"],
-			"value": [11, 800, 9000]
+			"name":"stock",
+			"unit":"Number of Vehicles",
+			"value": 4000
 		},
 		"4": {
-			"name":"enery",
-			"unit":"TJ",
-			"value": 9000
+			"name":"outflow",
+			"unit":"Tons of Materials",
+			"value": 500
 		},
 		"5": {
+			"name":"outflow",
+			"unit":"m2",
+			"value": 77
+		},
+		"6": {
+			"name":"outflow",
+			"unit":"Number of Vehicles",
+			"value": 900
+		},
+		"7": {
+			"name":"inflow",
+			"unit": "Tons of Materials",
+			"value": 2234
+		},
+		"8": {
+			"name":"inflow",
+			"unit": "m2",
+			"value": 88
+		},
+		"9": {
+			"name":"inflow",
+			"unit":"Number of Vehicles",
+			"value": 2344
+		},
+		"10": {
+			"name":"enery",
+			"unit":"TJ",
+			"value": 5000
+		},
+		"11": {
 			"name":"emissions",
 			"unit":"CO2-Eq",
-			"value": 7700000
+			"value": 1000000
 		}
 	}
 }

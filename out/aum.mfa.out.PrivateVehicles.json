@@ -3,25 +3,40 @@
 	"value": {
 		"1": {
 			"name":"stock",
-			"unit":["Number of Vehicles", "Tons of Materials"],
-			"value": [2000, 3000]
+			"unit": "Tons of Materials",
+			"value": 3000
 		},
 		"2": {
-			"name":"outflow",
-			"unit":["Number of Vehicles", "Tons of Materials"],
-			"value": [400, 200]
+			"name":"stock",
+			"unit":"Number of Vehicles",
+			"value": 2000
 		},
 		"3": {
-			"name":"inflow",
-			"unit":["Number of Vehicles", "Tons of Materials"],
-			"value": [1000, 2000]
+			"name":"outflow",
+			"unit":"Tons of Materials",
+			"value": 200
 		},
 		"4": {
+			"name":"outflow",
+			"unit":"Number of Vehicles",
+			"value": 400
+		},
+		"5": {
+			"name":"inflow",
+			"unit": "Tons of Materials",
+			"value": 2000
+		},
+		"6": {
+			"name":"inflow",
+			"unit":"Number of Vehicles",
+			"value": 1000
+		},
+		"7": {
 			"name":"enery",
 			"unit":"TJ",
 			"value": 4000
 		},
-		"5": {
+		"8": {
 			"name":"emissions",
 			"unit":"CO2-Eq",
 			"value": 4000000

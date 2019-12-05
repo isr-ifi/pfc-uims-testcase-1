@@ -13,14 +13,14 @@ import ReactDOM from "react-dom";
  * @props {integer} chartWidth [200]
  * @props {string} legendPosition [bottom]
  *
- * @props {dynamic} nameA [Team A] (aum.mfa.out.PublicVehicles.name) //TODO:make dots everywhere
- * @props {dynamic} nameB [Team B] (aum.mfa.out.PrivateVehicles.name)
- * @props {dynamic} nameC [Team C] (aum.mfa.out.OtherBuildings.name)
- * @props {dynamic} nameD [Team D] (aum.mfa.out.ResidentialBuildings.name)
- * @props {dynamic} nameE [Team E] (aum.mfa.out.Industry.name)
+ * @props {dynamic} modelA [Public Vehicles] (aum.mfa.out.PublicVehicles.value.7.name) 
+ * @props {dynamic} modelB [Private Vehicles] (aum.mfa.out.PrivateVehicles.value.7.name)
+ * @props {dynamic} modelC [Other Buildings] (aum.mfa.out.OtherBuildings.value.7.name)
+ * @props {dynamic} modelD [Residential Buildings] (aum.mfa.out.ResidentialBuildings.value.7.name)
+ * @props {dynamic} modelE [Industry] (aum.mfa.out.Industry.value.7.name)
  *
- * @props {dynamic} valueA [44] (aum.mfa.out.PublicVehicles.value.4.value)
- * @props {dynamic} valueB [55] (aum.mfa.out.PrivateVehicles.value.4.value)
+ * @props {dynamic} valueA [44] (aum.mfa.out.PublicVehicles.value.7.value)
+ * @props {dynamic} valueB [55] (aum.mfa.out.PrivateVehicles.value.7.value)
  * @props {dynamic} valueC [55] (aum.mfa.out.OtherBuildings.value.4.value)
  * @props {dynamic} valueD [43] (aum.mfa.out.ResidentialBuildings.value.4.value)
  * @props {dynamic} valueE [22] (aum.mfa.out.Industry.value.6.value)
@@ -34,7 +34,7 @@ class PieChart extends React.Component {
 
     this.state = {
       options: {
-        labels: [this.props.nameA, this.props.nameB, this.props.nameC, this.props.nameD, this.props.nameE], //['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+        labels: [this.props.modelA, this.props.modelB, this.props.modelC, this.props.modelD, this.props.modelE], //['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
         responsive: [{
           breakpoint: this.props.breakpoint, //480,
           options: {
