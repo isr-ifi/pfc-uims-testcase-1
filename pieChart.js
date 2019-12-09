@@ -13,17 +13,17 @@ import ReactDOM from "react-dom";
  * @props {integer} chartWidth [200]
  * @props {string} legendPosition [bottom]
  *
- * @props {dynamic} modelA [Public Vehicles] (aum.mfa.out.PublicVehicles.value.7.name) 
- * @props {dynamic} modelB [Private Vehicles] (aum.mfa.out.PrivateVehicles.value.7.name)
- * @props {dynamic} modelC [Other Buildings] (aum.mfa.out.OtherBuildings.value.7.name)
- * @props {dynamic} modelD [Residential Buildings] (aum.mfa.out.ResidentialBuildings.value.7.name)
- * @props {dynamic} modelE [Industry] (aum.mfa.out.Industry.value.7.name)
+ * @props {dynamic} modelA [aum.mfa.out.PublicVehicles] (aum.mfa.out.PublicVehicles.name) 
+ * @props {dynamic} modelB [aum.mfa.out.PrivateVehicles] (aum.mfa.out.PrivateVehicles.name)
+ * @props {dynamic} modelC [aum.mfa.out.OtherBuildings] (aum.mfa.out.OtherBuildings.name)
+ * @props {dynamic} modelD [aum.mfa.out.ResidentialBuildings] (aum.mfa.out.ResidentialBuildings.name)
+ * @props {dynamic} modelE [aum.mfa.out.Industry] (aum.mfa.out.Industry.name)
  *
- * @props {dynamic} valueA [44] (aum.mfa.out.PublicVehicles.value.7.value)
- * @props {dynamic} valueB [55] (aum.mfa.out.PrivateVehicles.value.7.value)
- * @props {dynamic} valueC [55] (aum.mfa.out.OtherBuildings.value.4.value)
- * @props {dynamic} valueD [43] (aum.mfa.out.ResidentialBuildings.value.4.value)
- * @props {dynamic} valueE [22] (aum.mfa.out.Industry.value.6.value)
+ * @props {dependent} valueA [44] {modelA--value.10.value}
+ * @props {dependent} valueB [55] {modelB--value.10.value}
+ * @props {dependent} valueC [55] {modelC--value.10.value}
+ * @props {dependent} valueD [43] {modelD--value.10.value}
+ * @props {dependent} valueE [22] {modelE--value.10.value}
  *
  * @props {dynamic} click [1000] (aum.mfa.in.PublicVehicles.value.1.value)
  */

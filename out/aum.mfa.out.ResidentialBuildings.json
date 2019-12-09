@@ -1,5 +1,5 @@
 {
-	"name": "Residential Buildings",
+	"name": "aum.mfa.out.ResidentialBuildings",
 	"value": {
 		"1": {
 			"name":"stock",
@@ -47,7 +47,7 @@
 			"value": 2344
 		},
 		"10": {
-			"name":"enery",
+			"name":"energy",
 			"unit":"TJ",
 			"value": 5000
 		},

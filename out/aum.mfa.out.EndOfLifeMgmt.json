@@ -1,17 +1,17 @@
 {
-	"name": "End of Life Mgmt.",
+	"name": "aum.mfa.out.EndOfLifeMgmt",
 	"value": {
-		"1": {
+		"17": {
 			"name":"Flow from EOL mgmt. to Landfill and Incineration",
 			"unit":"Tons of Materials",
 			"value": 777
 		},
-		"2": {
+		"18": {
 			"name":"Flow from EOL to Scrap Market (Recycle)",
 			"unit":"Tons of Materials",
 			"value": 888
 		},
-		"3": {
+		"19": {
 			"name":"Flow from EOL to Components Market (Reuse)",
 			"unit":"Tons of Materials",
 			"value": 999
