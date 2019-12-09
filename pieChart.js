@@ -58,16 +58,10 @@ class PieChart extends React.Component {
 
   render() {
     return (
-<<<<<<< HEAD
         <div id="chart">
           <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="100%" />
           <button onClick={this.showAlert}>test</button>
         </div>
-=======
-      <div id="chart">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="100%" />
-      </div>
->>>>>>> 7046071b4268a29ec72833e0feda68c238714e48
     );
   }
 }
