@@ -19,7 +19,6 @@ import ReactDOM from "react-dom";
  * @props {string} fourthFillStyle [circles]
  * @props {string} fiftFillStyle [slantedLines]
  * 
- * @props {boolean} dropShadowEnabled [true]
  * @props {dynamic} modelA [aum.mfa.out.PublicVehicles] (aum.mfa.out.PublicVehicles.name) 
  * @props {dynamic} modelB [aum.mfa.out.PrivateVehicles] (aum.mfa.out.PrivateVehicles.name)
  * @props {dynamic} modelC [aum.mfa.out.OtherBuildings] (aum.mfa.out.OtherBuildings.name)
@@ -42,7 +41,7 @@ class DonutChart2 extends React.Component {
                 chart: {
                     dropShadow: {
                         enabled: true,
-                        color: this.props.dropShadowcolor,
+                        color: '#111',
                         top: -1,
                         left: 3,
                         blur: 3,
@@ -64,7 +63,7 @@ class DonutChart2 extends React.Component {
                     opacity: 1,
                     pattern: {
                         enabled: true,
-                        style: ['verticalLines', 'squares', 'horizontalLines', 'circles', 'slantedLines'],
+                        style: [this.props.firstFillStyle, this.props.secondFillStyle, this.props.thirdFillStyle, this.props.fourthFillStyle, this.props.fiftFillStyle],
                     },
                 },
                 states: {
