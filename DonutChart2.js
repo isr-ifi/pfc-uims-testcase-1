@@ -9,7 +9,24 @@ import ReactDOM from "react-dom";
  * Some other chart
  *
  * @param something
+ * 
  * @visComp
+ * 
+ * @props {string} title [Stock in Tons of Materials]
+ * @props {string} color [#111]
+ * 
+ * @props {boolean} dropShadowEnabled [true]
+ * @props {dynamic} modelA [aum.mfa.out.PublicVehicles] (aum.mfa.out.PublicVehicles.name) 
+ * @props {dynamic} modelB [aum.mfa.out.PrivateVehicles] (aum.mfa.out.PrivateVehicles.name)
+ * @props {dynamic} modelC [aum.mfa.out.OtherBuildings] (aum.mfa.out.OtherBuildings.name)
+ * @props {dynamic} modelD [aum.mfa.out.ResidentialBuildings] (aum.mfa.out.ResidentialBuildings.name)
+ * @props {dynamic} modelE [aum.mfa.out.Industry] (aum.mfa.out.Industry.name)
+ *
+ * @props {dependent} valueA [44] {modelA--value.1.value}
+ * @props {dependent} valueB [55] {modelB--value.1.value}
+ * @props {dependent} valueC [55] {modelC--value.1.value}
+ * @props {dependent} valueD [43] {modelD--value.1.value}
+ * @props {dependent} valueE [22] {modelE--value.1.value}
  */
 class DonutChart2 extends React.Component {
 
@@ -21,7 +38,7 @@ class DonutChart2 extends React.Component {
                 chart: {
                     dropShadow: {
                         enabled: true,
-                        color: '#111',
+                        color: this.props.color,
                         top: -1,
                         left: 3,
                         blur: 3,
@@ -31,7 +48,7 @@ class DonutChart2 extends React.Component {
                 stroke: {
                     width: 0,
                 },
-                labels: ["Comedy", "Action", "SciFi", "Drama", "Horror"],
+                labels: [this.props.modelA, this.props.modelB, this.props.modelC, this.props.modelD, this.props.modelE],
                 dataLabels: {
                     dropShadow: {
                         blur: 3,
@@ -55,7 +72,7 @@ class DonutChart2 extends React.Component {
                     palette: 'palette2'
                 },
                 title: {
-                    text: "Favourite Movie Type"
+                    text: this.props.title
                 },
                 responsive: [{
                     breakpoint: 480,
@@ -69,7 +86,7 @@ class DonutChart2 extends React.Component {
                     }
                 }]
             },
-            series: [44, 55, 41, 17, 15]
+            series: [this.props.valueA, this.props.valueB, this.props.valueC, this.props.valueD, this.props.valueE]
         }
     }
 
