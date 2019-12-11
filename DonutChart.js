@@ -36,11 +36,7 @@ class DonutChart extends React.Component {
                 fill: {
                     type: 'gradient',
                 },
-                legend: {
-                    formatter: function(val, opts) {
-                        return val + " - " + opts.w.globals.series[opts.seriesIndex]
-                    }
-                },
+                labels: [this.props.modelA, this.props.modelB, this.props.modelC, this.props.modelD, this.props.modelE],
                 responsive: [{
                     breakpoint: 480,
                     options: {
