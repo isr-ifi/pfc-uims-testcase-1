@@ -13,7 +13,11 @@ import ReactDOM from "react-dom";
  * @visComp
  * 
  * @props {string} title [Stock in Tons of Materials]
- * @props {string} color [#111]
+ * @props {string} firstFillStyle [verticalLines]
+ * @props {string} secondFillStyle [squares]
+ * @props {string} thirdFillStyle [horizontalLines]
+ * @props {string} fourthFillStyle [circles]
+ * @props {string} fiftFillStyle [slantedLines]
  * 
  * @props {boolean} dropShadowEnabled [true]
  * @props {dynamic} modelA [aum.mfa.out.PublicVehicles] (aum.mfa.out.PublicVehicles.name) 
@@ -38,7 +42,7 @@ class DonutChart2 extends React.Component {
                 chart: {
                     dropShadow: {
                         enabled: true,
-                        color: this.props.color,
+                        color: this.props.dropShadowcolor,
                         top: -1,
                         left: 3,
                         blur: 3,
