@@ -36,6 +36,9 @@ class DonutChart extends React.Component {
                 fill: {
                     type: 'gradient',
                 },
+                title: {
+                    text: 'Stock Number of Vehicles'
+                },
                 labels: [this.props.modelA, this.props.modelB, this.props.modelC, this.props.modelD, this.props.modelE],
                 responsive: [{
                     breakpoint: 480,

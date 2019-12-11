@@ -25,7 +25,8 @@ import ReactDOM from "react-dom";
  * @props {dependent} valueD [43] {modelD--value.10.value}
  * @props {dependent} valueE [22] {modelE--value.10.value}
  *
- * @props {dynamic} click [1000] (aum.mfa.in.PublicVehicles.value.1.value)
+ * @props {dynamic} click [aum.mfa.in.PublicVehicles.name] (aum.mfa.in.PublicVehicles.name)
+ * @props {inputLocation} clickValue [777] {click--value.24.value--+1}
  */
 class PieChart extends React.Component {
       
@@ -35,6 +36,9 @@ class PieChart extends React.Component {
     this.state = {
       options: {
         labels: [this.props.modelA, this.props.modelB, this.props.modelC, this.props.modelD, this.props.modelE], //['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+        title: {
+                    text: 'Energy'
+                },
         responsive: [{
           breakpoint: this.props.breakpoint, //480,
           options: {
