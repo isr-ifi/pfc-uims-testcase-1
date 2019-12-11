@@ -10,8 +10,18 @@ import ReactDOM from "react-dom";
  *
  * @visComp
  * @param something
- * @props {boolean} enabled [true]
- * @props {string} type [gradient]
+ *
+ * @props {dynamic} modelA [aum.mfa.out.PublicVehicles] (aum.mfa.out.PublicVehicles.name) 
+ * @props {dynamic} modelB [aum.mfa.out.PrivateVehicles] (aum.mfa.out.PrivateVehicles.name)
+ * @props {dynamic} modelC [aum.mfa.out.OtherBuildings] (aum.mfa.out.OtherBuildings.name)
+ * @props {dynamic} modelD [aum.mfa.out.ResidentialBuildings] (aum.mfa.out.ResidentialBuildings.name)
+ * @props {dynamic} modelE [aum.mfa.out.Industry] (aum.mfa.out.Industry.name)
+ *
+ * @props {dependent} valueA [440] {modelA--value.3.value}
+ * @props {dependent} valueB [554] {modelB--value.3.value}
+ * @props {dependent} valueC [552] {modelC--value.3.value}
+ * @props {dependent} valueD [433] {modelD--value.3.value}
+ * @props {dependent} valueE [224] {modelE--value.3.value}
  */
 class DonutChart extends React.Component {
 
@@ -21,10 +31,10 @@ class DonutChart extends React.Component {
         this.state = {
             options: {
                 dataLabels: {
-                    enabled: this.props.enabled//false
+                    enabled: false
                 },
                 fill: {
-                    type: this.props.type, //'gradient',
+                    type: 'gradient',
                 },
                 legend: {
                     formatter: function(val, opts) {
@@ -43,7 +53,7 @@ class DonutChart extends React.Component {
                     }
                 }]
             },
-            series: [44, 55, 41, 17, 15],
+            series: [this.props.valueA, this.props.valueB, this.props.valueC, this.props.valueD, this.props.valueE],
         }
     }
 
