@@ -25,11 +25,11 @@ import ReactDOM from "react-dom";
  * @props {dynamic} modelD [aum.mfa.out.ResidentialBuildings] (aum.mfa.out.ResidentialBuildings.name)
  * @props {dynamic} modelE [aum.mfa.out.Industry] (aum.mfa.out.Industry.name)
  *
- * @props {dependent} valueA [44] {modelA--value.1.value}
- * @props {dependent} valueB [55] {modelB--value.1.value}
- * @props {dependent} valueC [55] {modelC--value.1.value}
+ * @props {dependent} valueA [24] {modelA--value.1.value}
+ * @props {dependent} valueB [75] {modelB--value.1.value}
+ * @props {dependent} valueC [95] {modelC--value.1.value}
  * @props {dependent} valueD [43] {modelD--value.1.value}
- * @props {dependent} valueE [22] {modelE--value.1.value}
+ * @props {dependent} valueE [42] {modelE--value.1.value}
  */
 class DonutChart2 extends React.Component {
 
