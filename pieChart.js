@@ -61,14 +61,14 @@ class PieChart extends React.Component {
   }
 
   showAlert() {
-    alert(this.props.click)
+    alert("this.props.click")
   }
 
   onButtonClicked() {
     let inputValue = inputData.value["24"].value + 1;
     alert(inputValue);
     inputData.value["24"].value = inputValue;
-    
+
     /*const fileName = "aum.mfa.in.PublicVehicles";
     const json = JSON.stringify(inputData);
     const blob = new Blob([json], {type: 'application/json'});
@@ -85,7 +85,12 @@ class PieChart extends React.Component {
     return (
         <div id="chart">
           <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="100%" />
-          <button onClick={this.onButtonClicked}>test</button>
+          <button onClick={() => {
+            switch (this.props.getValue) {
+            case "showAlert": this.showAlert(); break;
+            case "onButtonClicked": this.onButtonClicked(); break;
+          }}
+          }>test</button>
         </div>
     );
   }
