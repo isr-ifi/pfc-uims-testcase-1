@@ -1,6 +1,9 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 import ReactDOM from "react-dom";
+import inputData from './in/aum.mfa.in.PublicVehicles'
+
+const writeJsonFile = require('write-json-file');
 
 // class taken from https://apexcharts.com/react-chart-demos/pie-charts/simple-pie-chart/
 // last visited: 09.11.19
@@ -25,8 +28,8 @@ import ReactDOM from "react-dom";
  * @props {dependent} valueD [43] {modelD--value.10.value}
  * @props {dependent} valueE [22] {modelE--value.10.value}
  *
- * @props {dynamic} click [aum.mfa.in.PublicVehicles.name] (aum.mfa.in.PublicVehicles.name)
- * @props {inputLocation} clickValue [777] {click--value.24.value--+1}
+ * @props {dependent} click [777] {getValue--value.1.value}
+ * @props {callback} getValue [DecisionCard] (aum.mfa.in.PublicVehicles.name)
  */
 class PieChart extends React.Component {
       
@@ -54,17 +57,35 @@ class PieChart extends React.Component {
       series: [this.props.valueA, this.props.valueB, this.props.valueC, this.props.valueD, this.props.valueE], //[44, 55, 55, 43, 22],
     };
     this.showAlert = this.showAlert.bind(this);
+    this.onButtonClicked = this.onButtonClicked.bind(this);
   }
 
   showAlert() {
     alert(this.props.click)
   }
 
+  onButtonClicked() {
+    let inputValue = inputData.value["24"].value + 1;
+    alert(inputValue);
+    inputData.value["24"].value = inputValue;
+    
+    /*const fileName = "aum.mfa.in.PublicVehicles";
+    const json = JSON.stringify(inputData);
+    const blob = new Blob([json], {type: 'application/json'});
+    const href = await URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = href;
+    link.download = fileName + ".json";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);*/
+  }
+
   render() {
     return (
         <div id="chart">
           <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="100%" />
-          <button onClick={this.showAlert}>test</button>
+          <button onClick={this.onButtonClicked}>test</button>
         </div>
     );
   }
