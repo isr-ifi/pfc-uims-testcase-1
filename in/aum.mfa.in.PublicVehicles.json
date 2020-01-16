@@ -1,5 +1,5 @@
 {
-	"name": "onButtonClicked",
+	"name": "changePublicVehicles",
 	"value": {
 		"24": {
 			"name":"Vehicles per Capita",

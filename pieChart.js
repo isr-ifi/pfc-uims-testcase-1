@@ -28,8 +28,8 @@ const writeJsonFile = require('write-json-file');
  * @props {dependent} valueD [43] {modelD--value.10.value}
  * @props {dependent} valueE [22] {modelE--value.10.value}
  *
- * @props {dependent} click [777] {getValue--value.1.value}
- * @props {callback} getValue [DecisionCard] (aum.mfa.in.PublicVehicles.name)
+ * @props {dependent} click [777] {changePublicVehicles--value.1.value}
+ * @props {callback} changePublicVehicles [DecisionCard] (aum.mfa.in.PublicVehicles.name)
  */
 class PieChart extends React.Component {
       
@@ -56,15 +56,17 @@ class PieChart extends React.Component {
       },
       series: [this.props.valueA, this.props.valueB, this.props.valueC, this.props.valueD, this.props.valueE], //[44, 55, 55, 43, 22],
     };
-    this.showAlert = this.showAlert.bind(this);
-    this.onButtonClicked = this.onButtonClicked.bind(this);
+    this.changeAverageVehicleLifetime = this.changeAverageVehicleLifetime.bind(this);
+    this.changePublicVehicles = this.changePublicVehicles.bind(this);
   }
 
-  showAlert() {
-    alert("this.props.click")
+  changeAverageVehicleLifetime() {
+    let inputValue = inputData.value["25"].value + 1;
+    alert("The button was clicked and has a value: " + inputValue);
+    inputData.value["25"].value = inputValue;
   }
 
-  onButtonClicked() {
+  changePublicVehicles() {
     let inputValue = inputData.value["24"].value + 1;
     alert(inputValue);
     inputData.value["24"].value = inputValue;
@@ -82,15 +84,20 @@ class PieChart extends React.Component {
   }
 
   render() {
+    let buttonText = "";
+    switch (this.props.changePublicVehicles) {
+      case "changeAverageVehicleLifetime":  buttonText = "Change Average Lifetime Input Value"; break;
+      case "changePublicVehicles": buttonText = "Change Vehicles per Capita Value"; break;
+    }
     return (
         <div id="chart">
           <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width="100%" />
           <button onClick={() => {
-            switch (this.props.getValue) {
-            case "showAlert": this.showAlert(); break;
-            case "onButtonClicked": this.onButtonClicked(); break;
+            switch (this.props.changePublicVehicles) {
+            case "changeAverageVehicleLifetime": this.changeAverageVehicleLifetime(); break;
+            case "changePublicVehicles": this.changePublicVehicles(); break;
           }}
-          }>test</button>
+          }>{buttonText}</button>
         </div>
     );
   }
