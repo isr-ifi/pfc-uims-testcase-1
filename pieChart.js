@@ -108,5 +108,3 @@ export default PieChart;
 // const domContainer = document.querySelector('#app');
 //ReactDOM.render(React.createElement(PieChart), domContainer);
 
-
-
