@@ -5,7 +5,7 @@ import inputData from './in/aum.mfa.in.PublicVehicles'
 
 const writeJsonFile = require('write-json-file');
 
-// class taken from https://apexcharts.com/react-chart-demos/pie-charts/simple-pie-chart/
+// class taken and modified from https://apexcharts.com/react-chart-demos/pie-charts/simple-pie-chart/
 // last visited: 09.11.19
 
 /**

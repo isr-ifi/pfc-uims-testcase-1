@@ -2,7 +2,7 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 import ReactDOM from "react-dom";
 
-// code taken from: https://apexcharts.com/react-chart-demos/pie-charts/donut-with-pattern/
+// code taken and modified from: https://apexcharts.com/react-chart-demos/pie-charts/donut-with-pattern/
 // last visited: 9.11.19
 
 /**
