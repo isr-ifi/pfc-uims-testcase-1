@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 // last visited: 9.11.19
 
 /**
- * Some other chart
+ * Donut Chart with different filling styles.
  *
  * @param something
  * 

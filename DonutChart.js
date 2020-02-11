@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 // last visited: 9.11.19
 
 /**
- * Not valid syntax to be recognized as visual component
+ * Donut Chart
  *
  * @visComp
  * @param something
